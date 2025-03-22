@@ -1,0 +1,7 @@
+Package: docker-watchdog
+Version: 1.0
+Section: base
+Priority: optional
+Architecture: all
+Maintainer: Sen
+Description: Restart exited Docker containers automatically with systemd.

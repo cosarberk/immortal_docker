@@ -1,0 +1,13 @@
+[Unit]
+Description=Docker Container Watchdog - Auto Restart Exited Containers
+After=docker.service
+Requires=docker.service
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=10
+ExecStart=/usr/local/bin/docker-watchdog.sh
+
+[Install]
+WantedBy=multi-user.target
